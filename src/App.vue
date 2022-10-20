@@ -44,6 +44,8 @@ export default {
         }
     },
     mounted: function() {
+
+        localStorage.setItem('CIS_NAV', JSON.stringify({}))
         
         setInterval(() => {
             if ( this.local != localStorage.getItem('CIS_NAV') ) {
