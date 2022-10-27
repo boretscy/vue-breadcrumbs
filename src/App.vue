@@ -1,5 +1,5 @@
 <template>
-    <div class="container mt-5 mb-3 breadcrumbs">
+    <div class="container mt-5 mb-5 breadcrumbs">
         <div class="row">
             <div class="col text-minus">
                 <item 
