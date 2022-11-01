@@ -4,7 +4,7 @@
         :itemprop="( !last ) ? 'itemListElement' : false" 
         :itemscope="!last" 
         :itemtype="( !last ) ? 'http://schema.org/ListItem': false">
-        <svg xmlns="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left" v-if="!first"></use></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" v-if="!first"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>
         <a :href="item.link" :title="item.title" itemprop="item" class="text-decoration-none c-yamiddlegray c-h-yablue" v-if="!last">
 			<span itemprop="name">{{ item.title }}</span>
 		</a>
